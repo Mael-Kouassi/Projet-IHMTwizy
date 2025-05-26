@@ -379,8 +379,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\DARK_Progbar_Tile_V_Blue_16x1.c</PathWithFileName>
-      <FilenameWithoutPath>DARK_Progbar_Tile_V_Blue_16x1.c</FilenameWithoutPath>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Font\NettoOT_24_Normal_EXT_AA4.c</PathWithFileName>
+      <FilenameWithoutPath>NettoOT_24_Normal_EXT_AA4.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -391,8 +391,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Font\NettoOT_24_Normal_EXT_AA4.c</PathWithFileName>
-      <FilenameWithoutPath>NettoOT_24_Normal_EXT_AA4.c</FilenameWithoutPath>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Font\NettoOT_32_Normal_EXT_AA4.c</PathWithFileName>
+      <FilenameWithoutPath>NettoOT_32_Normal_EXT_AA4.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -403,8 +403,164 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Font\NettoOT_32_Normal_EXT_AA4.c</PathWithFileName>
-      <FilenameWithoutPath>NettoOT_32_Normal_EXT_AA4.c</FilenameWithoutPath>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\pharesdecroisementpetit.c</PathWithFileName>
+      <FilenameWithoutPath>pharesdecroisementpetit.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>16</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\feuxderoutepetit.c</PathWithFileName>
+      <FilenameWithoutPath>feuxderoutepetit.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>17</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\batterietemppetit.c</PathWithFileName>
+      <FilenameWithoutPath>batterietemppetit.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>18</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\DARK_Progbar_Tile_H_Green_1x16.c</PathWithFileName>
+      <FilenameWithoutPath>DARK_Progbar_Tile_H_Green_1x16.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>19</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\DARK_Switch_Body_H_Off_55x20.c</PathWithFileName>
+      <FilenameWithoutPath>DARK_Switch_Body_H_Off_55x20.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>20</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\DARK_Switch_Body_H_On_55x20.c</PathWithFileName>
+      <FilenameWithoutPath>DARK_Switch_Body_H_On_55x20.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>21</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\DARK_Switch_Thumb_26x26.c</PathWithFileName>
+      <FilenameWithoutPath>DARK_Switch_Thumb_26x26.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>22</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\fprondpetit.c</PathWithFileName>
+      <FilenameWithoutPath>fprondpetit.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>23</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\routepetit.c</PathWithFileName>
+      <FilenameWithoutPath>routepetit.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>24</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\freinamainoffp.c</PathWithFileName>
+      <FilenameWithoutPath>freinamainoffp.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>25</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\feuxdecroisementonp.c</PathWithFileName>
+      <FilenameWithoutPath>feuxdecroisementonp.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>26</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\feuxderouteonp.c</PathWithFileName>
+      <FilenameWithoutPath>feuxderouteonp.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>27</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\DARK_Image_DiagLinesGray_40x40.c</PathWithFileName>
+      <FilenameWithoutPath>DARK_Image_DiagLinesGray_40x40.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>28</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\appwizard\ihm_twizy\Resource\Image\RenaultLogop.c</PathWithFileName>
+      <FilenameWithoutPath>RenaultLogop.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -412,7 +568,7 @@
 
   <Group>
     <GroupName>::Board Support</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
@@ -420,6 +576,14 @@
 
   <Group>
     <GroupName>::CMSIS</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>1</RteFlg>
+  </Group>
+
+  <Group>
+    <GroupName>::CMSIS Driver</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>

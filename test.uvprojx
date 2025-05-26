@@ -455,11 +455,6 @@
               <FilePath>.\appwizard\ihm_twizy\Resource\Image\DARK_Progbar_Tile_V_Gray_16x1.c</FilePath>
             </File>
             <File>
-              <FileName>DARK_Progbar_Tile_V_Blue_16x1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\appwizard\ihm_twizy\Resource\Image\DARK_Progbar_Tile_V_Blue_16x1.c</FilePath>
-            </File>
-            <File>
               <FileName>NettoOT_24_Normal_EXT_AA4.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\appwizard\ihm_twizy\Resource\Font\NettoOT_24_Normal_EXT_AA4.c</FilePath>
@@ -469,6 +464,76 @@
               <FileType>1</FileType>
               <FilePath>.\appwizard\ihm_twizy\Resource\Font\NettoOT_32_Normal_EXT_AA4.c</FilePath>
             </File>
+            <File>
+              <FileName>pharesdecroisementpetit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\pharesdecroisementpetit.c</FilePath>
+            </File>
+            <File>
+              <FileName>feuxderoutepetit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\feuxderoutepetit.c</FilePath>
+            </File>
+            <File>
+              <FileName>batterietemppetit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\batterietemppetit.c</FilePath>
+            </File>
+            <File>
+              <FileName>DARK_Progbar_Tile_H_Green_1x16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\DARK_Progbar_Tile_H_Green_1x16.c</FilePath>
+            </File>
+            <File>
+              <FileName>DARK_Switch_Body_H_Off_55x20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\DARK_Switch_Body_H_Off_55x20.c</FilePath>
+            </File>
+            <File>
+              <FileName>DARK_Switch_Body_H_On_55x20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\DARK_Switch_Body_H_On_55x20.c</FilePath>
+            </File>
+            <File>
+              <FileName>DARK_Switch_Thumb_26x26.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\DARK_Switch_Thumb_26x26.c</FilePath>
+            </File>
+            <File>
+              <FileName>fprondpetit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\fprondpetit.c</FilePath>
+            </File>
+            <File>
+              <FileName>routepetit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\routepetit.c</FilePath>
+            </File>
+            <File>
+              <FileName>freinamainoffp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\freinamainoffp.c</FilePath>
+            </File>
+            <File>
+              <FileName>feuxdecroisementonp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\feuxdecroisementonp.c</FilePath>
+            </File>
+            <File>
+              <FileName>feuxderouteonp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\feuxderouteonp.c</FilePath>
+            </File>
+            <File>
+              <FileName>DARK_Image_DiagLinesGray_40x40.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\DARK_Image_DiagLinesGray_40x40.c</FilePath>
+            </File>
+            <File>
+              <FileName>RenaultLogop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\appwizard\ihm_twizy\Resource\Image\RenaultLogop.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -476,6 +541,9 @@
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS Driver</GroupName>
         </Group>
         <Group>
           <GroupName>::Device</GroupName>
@@ -504,6 +572,12 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </api>
+      <api Capiversion="1.3.0" Cclass="CMSIS Driver" Cgroup="CAN" exclusive="0">
+        <package name="CMSIS" schemaVersion="1.7.36" url="https://www.keil.com/pack/" vendor="ARM" version="6.1.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </api>
       <api Capiversion="1.0.1" Cclass="CMSIS" Cgroup="OS Tick" exclusive="1">
         <package name="CMSIS" schemaVersion="1.7.7" url="https://www.keil.com/pack/" vendor="ARM" version="6.0.0"/>
         <targetInfos>
@@ -524,14 +598,14 @@
       </api>
     </apis>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="6.0.0" condition="ARMv6_7_8-M Device">
-        <package name="CMSIS" schemaVersion="1.7.7" url="https://www.keil.com/pack/" vendor="ARM" version="6.0.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="6.1.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.7.36" url="https://www.keil.com/pack/" vendor="ARM" version="6.1.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
       <component Capiversion="1.0.1" Cclass="CMSIS" Cgroup="OS Tick" Csub="SysTick" Cvendor="ARM" Cversion="1.0.5" condition="OS Tick SysTick">
-        <package name="CMSIS" schemaVersion="1.7.7" url="https://www.keil.com/pack/" vendor="ARM" version="6.0.0"/>
+        <package name="CMSIS" schemaVersion="1.7.36" url="https://www.keil.com/pack/" vendor="ARM" version="6.1.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
@@ -543,115 +617,121 @@
         </targetInfos>
       </component>
       <component Cbundle="STM32F746G-Discovery" Cclass="Board Support" Cgroup="Drivers" Csub="Basic I/O" Cvendor="Keil" Cversion="1.1.1" condition="STM32F746G-Discovery BSP">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
       <component Cbundle="STM32F746G-Discovery" Cclass="Board Support" Cgroup="Drivers" Csub="SDRAM" Cvendor="Keil" Cversion="1.1.1" condition="STM32F746G-Discovery BSP SDRAM">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
       <component Cbundle="STM32F746G-Discovery" Cclass="Board Support" Cgroup="Drivers" Csub="Touch Screen" Cvendor="Keil" Cversion="1.1.1" condition="STM32F746G-Discovery BSP TS">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
       <component Capiversion="1.0.0" Cbundle="STM32F746G-Discovery" Cclass="Board Support" Cgroup="Touchscreen" Cvendor="Keil" Cversion="1.1.1" condition="STM32F746G-Discovery TS">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
       <component Capiversion="1.1.0" Cbundle="STM32F746G-Discovery" Cclass="Board Support" Cgroup="emWin LCD" Cvariant="RGB IF" Cvendor="Keil" Cversion="1.1.1" condition="STM32F746G-Discovery LCD_RGB">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 Framework Classic">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Capiversion="1.0.0" Cclass="CMSIS Driver" Cgroup="CAN" Cvendor="Keil" Cversion="1.6.0" condition="STM32F7 CMSIS_Driver CAN">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Common" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL Common">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 Framework Classic">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Cortex" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Common" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL Common">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="DMA" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Cortex" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="DMA2D" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="DMA" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="GPIO" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="DMA2D" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="I2C" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL DMA">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="GPIO" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="LTDC" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7x6_7x7_7x8_7x9_750 HAL">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="I2C" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL DMA">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="PWR" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="LTDC" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7x6_7x7_7x8_7x9 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="RCC" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL GPIO">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="PWR" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="SDRAM" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL DMA">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="RCC" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL GPIO">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="UART" Cvendor="Keil" Cversion="1.3.0" condition="STM32F7 HAL DMA">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="SDRAM" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL DMA">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.5" condition="STM32F7 CMSIS">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="UART" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 HAL DMA">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
-      <component Cclass="Graphics Display" Cgroup="STM32F746G-Discovery" Cvariant="RGB IF" Cvendor="Keil" Cversion="1.0.2" condition="STM32F7 HAL LTDC DMA2D Graphics LCD_RGB">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.0" condition="STM32F7 CMSIS">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Graphics Display" Cgroup="STM32F746G-Discovery" Cvariant="RGB IF" Cvendor="Keil" Cversion="1.0.0" condition="STM32F7 HAL LTDC DMA2D Graphics LCD_RGB">
+        <package name="STM32F7xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.9.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>

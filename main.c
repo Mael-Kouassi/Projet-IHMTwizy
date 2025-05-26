@@ -22,9 +22,11 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "Driver_CAN.h"                 // ::CMSIS Driver:CAN
 
 extern void BSP_SDRAM_Init(void);
 extern int Init_GUIThread (void);
+extern ARM_DRIVER_CAN Driver_CAN1;
 
 DMA2D_HandleTypeDef hdma2d;
 
@@ -129,6 +131,30 @@ static void MX_DMA2D_Init(void)
   * @param  None
   * @retval None
   */
+void Init_CAN(void){
+Driver_CAN1.Initialize(NULL,NULL);
+Driver_CAN1.PowerControl(ARM_POWER_FULL);
+Driver_CAN1.SetMode(ARM_CAN_MODE_INITIALIZATION);
+Driver_CAN1.SetBitrate(
+
+ARM_CAN_BITRATE_NOMINAL, // débit fixe
+125000, // 125 kbits/s (LS)
+ARM_CAN_BIT_PROP_SEG(5U) | // prop. seg = 5 TQ
+ARM_CAN_BIT_PHASE_SEG1(1U) | // phase seg1 = 1 TQ
+ARM_CAN_BIT_PHASE_SEG2(1U) | // phase seg2 = 1 TQ
+ARM_CAN_BIT_SJW(1U) // Resync. Seg = 1 TQ
+);
+Driver_CAN1.ObjectSetFilter( 0, ARM_CAN_FILTER_ID_RANGE_ADD , ARM_CAN_STANDARD_ID(0x000),ARM_CAN_STANDARD_ID(0x7FF));
+	
+// Filtre objet 0 sur Identifiant 0x3Fx
+Driver_CAN1.ObjectSetFilter( 0, ARM_CAN_FILTER_ID_MASKABLE_ADD , ARM_CAN_STANDARD_ID(0x3F0),0X7F0) ; // masque
+
+Driver_CAN1.ObjectConfigure(1,ARM_CAN_OBJ_TX); // Objet 1 pour émission
+Driver_CAN1.ObjectConfigure(0,ARM_CAN_OBJ_RX); // Objet 0 pour réception
+Driver_CAN1.SetMode(ARM_CAN_MODE_NORMAL); // fin initialisation
+}
+
+
 int main(void)
 {
   /* This project template calls firstly two functions in order to configure MPU feature 
@@ -136,7 +162,7 @@ int main(void)
      These functions are provided as template implementation that User may integrate 
      in his application, to enhance the performance in case of use of AXI interface 
      with several masters. */ 
-  
+   
   /* Configure the MPU attributes as Write Through */
   MPU_Config();
 
@@ -150,6 +176,7 @@ int main(void)
        - Low Level Initialization
      */
   HAL_Init();
+	Init_CAN();
 	
   /* Initialize BSP SDRAM */
   BSP_SDRAM_Init();
@@ -165,6 +192,7 @@ int main(void)
 
   /* Add your application code here
      */
+
 
 #ifdef RTE_CMSIS_RTOS2
   /* Initialize CMSIS-RTOS2 */
