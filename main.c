@@ -23,10 +23,13 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "Driver_CAN.h"                 // ::CMSIS Driver:CAN
+//#include "Driver_USART.h"               // ::CMSIS Driver:USART
+
 
 extern void BSP_SDRAM_Init(void);
 extern int Init_GUIThread (void);
 extern ARM_DRIVER_CAN Driver_CAN1;
+//extern ARM_DRIVER_USART Driver_USART6;
 
 DMA2D_HandleTypeDef hdma2d;
 
@@ -138,23 +141,33 @@ Driver_CAN1.SetMode(ARM_CAN_MODE_INITIALIZATION);
 Driver_CAN1.SetBitrate(
 
 ARM_CAN_BITRATE_NOMINAL, // débit fixe
-125000, // 125 kbits/s (LS)
+500000, // anciennement125 kbits/s (LS)
 ARM_CAN_BIT_PROP_SEG(5U) | // prop. seg = 5 TQ
 ARM_CAN_BIT_PHASE_SEG1(1U) | // phase seg1 = 1 TQ
 ARM_CAN_BIT_PHASE_SEG2(1U) | // phase seg2 = 1 TQ
 ARM_CAN_BIT_SJW(1U) // Resync. Seg = 1 TQ
 );
-Driver_CAN1.ObjectSetFilter( 0, ARM_CAN_FILTER_ID_RANGE_ADD , ARM_CAN_STANDARD_ID(0x000),ARM_CAN_STANDARD_ID(0x7FF));
 	
-// Filtre objet 0 sur Identifiant 0x3Fx
-Driver_CAN1.ObjectSetFilter( 0, ARM_CAN_FILTER_ID_MASKABLE_ADD , ARM_CAN_STANDARD_ID(0x3F0),0X7F0) ; // masque
+Driver_CAN1.ObjectSetFilter( 0, ARM_CAN_FILTER_ID_EXACT_ADD , ARM_CAN_STANDARD_ID(0x5D7),0) ;//Vehicle Speed, Distance totalizer, ext 
 
-Driver_CAN1.ObjectConfigure(1,ARM_CAN_OBJ_TX); // Objet 1 pour émission
+//Driver_CAN1.ObjectConfigure(1,ARM_CAN_OBJ_TX); // Objet 1 pour émission
 Driver_CAN1.ObjectConfigure(0,ARM_CAN_OBJ_RX); // Objet 0 pour réception
 Driver_CAN1.SetMode(ARM_CAN_MODE_NORMAL); // fin initialisation
 }
-
-
+/*
+void Init_UART(void){
+Driver_USART6.Initialize(NULL );
+Driver_USART6.PowerControl(ARM_POWER_FULL);
+Driver_USART6.Control( ARM_USART_MODE_ASYNCHRONOUS |
+ARM_USART_DATA_BITS_8 |
+ARM_USART_STOP_BITS_1 |
+ARM_USART_PARITY_NONE |
+ARM_USART_FLOW_CONTROL_NONE,
+38400);
+Driver_USART6.Control(ARM_USART_CONTROL_TX,1);
+Driver_USART6.Control(ARM_USART_CONTROL_RX,1);
+}
+*/
 int main(void)
 {
   /* This project template calls firstly two functions in order to configure MPU feature 
@@ -177,6 +190,7 @@ int main(void)
      */
   HAL_Init();
 	Init_CAN();
+	//Init_UART();
 	
   /* Initialize BSP SDRAM */
   BSP_SDRAM_Init();
@@ -187,9 +201,6 @@ int main(void)
   SystemClock_Config();
   SystemCoreClockUpdate();
 	
-	
-
-
   /* Add your application code here
      */
 
