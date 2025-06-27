@@ -31,6 +31,8 @@ extern int Init_GUIThread (void);
 extern ARM_DRIVER_CAN Driver_CAN1;
 //extern ARM_DRIVER_USART Driver_USART6;
 
+void CAN_Receive_Handler(uint32_t obj_idx);
+
 DMA2D_HandleTypeDef hdma2d;
 
 #ifdef _RTE_
@@ -135,7 +137,7 @@ static void MX_DMA2D_Init(void)
   * @retval None
   */
 void Init_CAN(void){
-Driver_CAN1.Initialize(NULL,NULL);
+Driver_CAN1.Initialize(CAN_Receive_Handler,NULL);
 Driver_CAN1.PowerControl(ARM_POWER_FULL);
 Driver_CAN1.SetMode(ARM_CAN_MODE_INITIALIZATION);
 Driver_CAN1.SetBitrate(
@@ -148,8 +150,8 @@ ARM_CAN_BIT_PHASE_SEG2(1U) | // phase seg2 = 1 TQ
 ARM_CAN_BIT_SJW(1U) // Resync. Seg = 1 TQ
 );
 	
-Driver_CAN1.ObjectSetFilter( 0, ARM_CAN_FILTER_ID_EXACT_ADD , ARM_CAN_STANDARD_ID(0x5D7),0) ;//Vehicle Speed, Distance totalizer, ext 
-
+Driver_CAN1.ObjectSetFilter( 0, ARM_CAN_FILTER_ID_EXACT_ADD , ARM_CAN_STANDARD_ID(0x5D7),0) ;//Vehicle Speed, Distance totalizer
+	
 //Driver_CAN1.ObjectConfigure(1,ARM_CAN_OBJ_TX); // Objet 1 pour émission
 Driver_CAN1.ObjectConfigure(0,ARM_CAN_OBJ_RX); // Objet 0 pour réception
 Driver_CAN1.SetMode(ARM_CAN_MODE_NORMAL); // fin initialisation
@@ -190,6 +192,8 @@ int main(void)
      */
   HAL_Init();
 	Init_CAN();
+	NVIC_EnableIRQ(CAN1_RX0_IRQn); 
+
 	//Init_UART();
 	
   /* Initialize BSP SDRAM */
